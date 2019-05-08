@@ -5,7 +5,17 @@
 }
 
 :root{
-    --primary-color: #ff5b24;
+    --primary-color: #007272;
+    --bg: white;
+    --text-around: #49367e;
+    --text-inside: white;
+}
+
+.night{
+    --bulb: url(bulb-off.svg);
+    --bg: black;
+    --text-around: white;
+    --text-inside: black;
 }
 
 body {
@@ -19,6 +29,7 @@ body {
         "s1 header s2"
         "s1 main s2"
         "s1 footer s2";
+    background: var(--bg);
 }
 
 header {
@@ -38,7 +49,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: var(--text-inside);
 }
 
 footer {
@@ -54,7 +65,11 @@ ul {
     display: flex;
     justify-content: space-around;
     font-size: 0.8em;
-    color: #49367e;
+    color: var(--text-around);
+}
+
+h3{
+    color: var(--text-around);
 }
 
 section {
@@ -91,4 +106,27 @@ h1 {
 
 .tie{
     fill: var(--primary-color);
+}
+
+.personalize{
+    padding: 50px;
+}
+
+#bulb{
+    background: var(--bulb, url(bulb-on.svg));
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.text-sizer{
+    display: grid;
+    grid-template-columns: auto 250px auto;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.man-circle{
+    fill: var(--bg);
 }
