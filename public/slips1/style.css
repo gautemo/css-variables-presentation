@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@font-face {
+  font-family: 'font';
+  src: url('font.woff2') format('woff2')
+}
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'font';
     margin: 0;
     padding: 0;
     display: grid;
@@ -61,11 +65,7 @@ section {
 
 .info p {
     max-width: 450px;
-    font-size: 1.5em;
-}
-
-.info h1 {
-    font-size: 3em;
+    font-size: 1.3em;
 }
 
 h1 {
@@ -78,8 +78,13 @@ h1 {
 
 .slogan {
     font-size: 5em;
+    width: 35%;
 }
 
 .person-icon {
     stroke: #007272;
+}
+
+.tie{
+    fill: #007272;
 }
