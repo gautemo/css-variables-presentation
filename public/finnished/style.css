@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
 @font-face {
-  font-family: 'font';
-  src: url('font.woff2') format('woff2')
+    font-family: 'font';
+    src: url('font.woff2') format('woff2')
 }
 
-:root{
-    --primary-color: #007272;
+:root {
+    --primary-color: #d94e1f;
     --bg: white;
     --text-around: #49367e;
     --text-inside: white;
 }
 
-.night{
+.night {
     --bulb: url(bulb-off.svg);
     --bg: black;
     --text-around: white;
@@ -29,6 +30,8 @@ body {
         "s1 header s2"
         "s1 main s2"
         "s1 footer s2";
+    color: var(--text-around);
+    font-size: var(--size, 1em);
     background: var(--bg);
 }
 
@@ -45,6 +48,7 @@ header {
 
 main {
     grid-area: main;
+    /* Everyone wants this color: #d94e1f */
     background: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -65,11 +69,6 @@ ul {
     display: flex;
     justify-content: space-around;
     font-size: 0.8em;
-    color: var(--text-around);
-}
-
-h3{
-    color: var(--text-around);
 }
 
 section {
@@ -104,15 +103,15 @@ h1 {
     stroke: var(--primary-color);
 }
 
-.tie{
+.tie {
     fill: var(--primary-color);
 }
 
-.personalize{
+.personalize {
     padding: 50px;
 }
 
-#bulb{
+#bulb {
     background: var(--bulb, url(bulb-on.svg));
     background-size: contain;
     height: 80px;
@@ -120,13 +119,10 @@ h1 {
     cursor: pointer;
 }
 
-.text-sizer{
-    display: grid;
-    grid-template-columns: auto 250px auto;
-    grid-gap: 5px;
-    align-items: center;
+.man-circle {
+    fill: var(--bg);
 }
 
-.man-circle{
-    fill: var(--bg);
+input[type=range] {
+    width: 250px;
 }

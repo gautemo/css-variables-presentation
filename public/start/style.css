@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
 @font-face {
-  font-family: 'font';
-  src: url('font.woff2') format('woff2')
+    font-family: 'font';
+    src: url('font.woff2') format('woff2')
 }
 
 body {
@@ -15,6 +16,7 @@ body {
         "s1 header s2"
         "s1 main s2"
         "s1 footer s2";
+    color: #49367e;
 }
 
 header {
@@ -30,6 +32,7 @@ header {
 
 main {
     grid-area: main;
+    /* Everyone wants this color: #d94e1f */
     background: #007272;
     display: flex;
     flex-direction: column;
@@ -50,7 +53,6 @@ ul {
     display: flex;
     justify-content: space-around;
     font-size: 0.8em;
-    color: #49367e;
 }
 
 section {
@@ -85,6 +87,53 @@ h1 {
     stroke: #007272;
 }
 
-.tie{
+.tie {
     fill: #007272;
 }
+
+.personalize {
+    padding: 50px;
+}
+
+#bulb {
+    background: url(bulb-on.svg);
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.man-circle {
+    fill: white;
+}
+
+input[type=range] {
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+/*
+:root {
+    --primary-color: #007272;
+    --bg: white;
+    --text-around: #49367e;
+    --text-inside: white;
+}
+
+.night {
+    --bulb: url(bulb-off.svg);
+    --bg: black;
+    --text-around: white;
+    --text-inside: black;
+}
+
+.man-circle {
+    fill: var(--bg);
+}
+*/
