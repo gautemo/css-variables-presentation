@@ -16,7 +16,12 @@ body {
         "s1 header s2"
         "s1 main s2"
         "s1 footer s2";
+    /*nm*/
     color: #49367e;
+    /*nm*/
+    background: white;
+    /*ts*/
+    font-size: 1em;
 }
 
 header {
@@ -37,6 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /*nm*/
     color: white;
 }
 
@@ -96,6 +102,7 @@ h1 {
 }
 
 #bulb {
+    /*nm*/
     background: url(bulb-on.svg);
     background-size: contain;
     height: 80px;
@@ -104,6 +111,7 @@ h1 {
 }
 
 .man-circle {
+    /*nm*/
     fill: white;
 }
 
