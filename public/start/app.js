@@ -4,6 +4,7 @@ document.querySelector('input[type=color]').addEventListener('change', e => {
 
 document.querySelector('input[type=range]').addEventListener('input', e => {
     console.log(e.target.value);
+    //document.documentElement.style.setProperty('--text', e.target.value + 'px');
 });
 
 document.querySelector('#bulb').addEventListener('click', () => {
