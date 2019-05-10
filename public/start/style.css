@@ -16,11 +16,11 @@ body {
         "s1 header s2"
         "s1 main s2"
         "s1 footer s2";
-    /*nm: --text-around*/
+    /*nm: var(--text-around)*/
     color: #49367e;
-    /*nm: --bg*/
+    /*nm: var(--bg)*/
     background: white;
-    /*ts: --text*/
+    /*ts: var(--text, 1em)*/
     font-size: 1em;
 }
 
@@ -42,7 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*nm: --text-inside*/
+    /*nm: var(--text-inside)*/
     color: white;
 }
 
@@ -111,7 +111,7 @@ h1 {
 }
 
 .man-circle {
-    /*nm: --bg*/
+    /*nm: var(--bg)*/
     fill: white;
 }
 
