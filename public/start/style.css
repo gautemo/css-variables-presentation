@@ -16,11 +16,11 @@ body {
         "s1 header s2"
         "s1 main s2"
         "s1 footer s2";
-    /*nm*/
+    /*nm: --text-around*/
     color: #49367e;
-    /*nm*/
+    /*nm: --bg*/
     background: white;
-    /*ts*/
+    /*ts: --text*/
     font-size: 1em;
 }
 
@@ -42,7 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*nm*/
+    /*nm: --text-inside*/
     color: white;
 }
 
@@ -102,7 +102,7 @@ h1 {
 }
 
 #bulb {
-    /*nm*/
+    /*nm: var(--bulb, url(bulb-on.svg))*/
     background: url(bulb-on.svg);
     background-size: contain;
     height: 80px;
@@ -111,7 +111,7 @@ h1 {
 }
 
 .man-circle {
-    /*nm*/
+    /*nm: --bg*/
     fill: white;
 }
 
@@ -139,9 +139,5 @@ input[type=range] {
     --bg: black;
     --text-around: white;
     --text-inside: black;
-}
-
-.man-circle {
-    fill: var(--bg);
 }
 */

@@ -8,4 +8,5 @@ document.querySelector('input[type=range]').addEventListener('input', e => {
 
 document.querySelector('#bulb').addEventListener('click', () => {
     console.log('clicked');
+    //document.documentElement.classList.toggle('night');
 });
